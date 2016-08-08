@@ -82,8 +82,8 @@ clear: both;
 
 @font-face {
     font-family: 'bangersregular';
-    src: url('bangers-webfont.woff2') format('woff2'),
-         url('bangers-webfont.woff') format('woff');
+    src: url('bangers.woff2') format('woff2'),
+         url('bangers.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -193,7 +193,7 @@ h1 {
   padding: 30px 15px;
   font-size: 40px;
   float: left;
-  font-family: 'Bangers', cursive;
+  font-family: 'bangersregular', cursive;
 }
 
 h2 {
