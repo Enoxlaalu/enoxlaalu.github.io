@@ -74,6 +74,7 @@ clear: both;
   src: url('fonts/bangers/bangers.eot');
   src: url('fonts/bangers/bangers.eot?#iefix') format('embedded-opentype'),
   url('fonts/bangers/bangers.woff') format('woff'),
+  url('fonts/bangers/bangers.woff2') format('woff2'),
   url('fonts/bangers/bangers.ttf') format('truetype');
   font-style: normal;
   font-weight: normal;
