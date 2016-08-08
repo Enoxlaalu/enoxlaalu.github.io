@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Lora:400,400i" rel="stylesheet">
+</head>
+<body>
+
+	<header class="container about_h">
+		<nav>
+			<h1>Aleksandr Cherkasov</h1>
+			<ul>
+				<li><a class="nav" href="#">Обо мне</a></li><!--
+				--><li><a class="nav" href="index.html">Проекты</a></li><!--
+			--><li><a class="nav" href="contacts.html">Контакты</a></li>
+		</ul>
+	</nav>
+	<h2>Краткая информация обо мне</h2>
+</header>
+
+<section class="container about">
+	<div class="row_about">
+		<div class="photo-wrap">
+			<div class="photo-front p1">
+				<div class="photo-back p2"></div>
+			</div>
+			<div class="photo-front p4">
+				<div class="photo-back p3"></div>
+			</div>
+		</div>
+		<p>Приветствеую тебя, дорогой друг! Меня зовут Александр Черкасов, мне 28 лет и я живу в прекрасном городе Санкт-Петербурге.</p>
+		<p>Я начинающий frontend-разработчик и сейчас ищу удаленную подработку в IT-сфере, с последующим переходом на фулл-тайм. Чуть ниже ты найдешь некоторую информацию о моих навыках и личных качествах. Кроме того, я буду рад, если ты заглянешь на страницу "Проекты" и посмотришь на мои работы!</p>
+		<p>В данный момент я верстаю на HTML5/CSS3, с применением CSS-анимации, переходов, адаптивной верстки, кроссбраузерности. Также умею работать с Bootstrap и Git.</p>
+		<p>Знаю на базовом уровне PHP, JavaScript, jQuery, Adobe Photoshop, Adobe Premiere.</p>
+		<p>Мои сильные стороны:</p>
+		<ul>
+			<li>активный;</li>
+			<li>умный (красный диплом);</li>
+			<li>умею достигать поставленных целей;</li>
+			<li>легко- и быстрообучаемый;</li>
+			<li>коммуникабельный;</li>
+			<li>имею большой интерес к программированию;</li>
+			<li>знаю английский язык.</li>
+		</ul>
+		<p>Есть огромное желание и мотивация работать, учиться и развиваться!</p>
+	</div>
+	<form action="#">
+			<fieldset>
+				<legend>Задайте мне свой вопрос</legend>
+				<label for="Фамилия">Фамилия: <span>*</span></label>
+				<input type="text" id="Фамилия" placeholder="Иванов" required pattern="\S+[А-Яа-я]">
+				<label for="Имя">Имя: <span>*</span></label>
+				<input type="text" id="Имя" placeholder="Иван" required pattern="\S+[А-Яа-я]">
+				<label for="Отчество">Отчество:</label>
+				<input type="text" id="Отчество" placeholder="Иванович" pattern="\S+[А-Яа-я]">
+				<label for="Телефон">Телефон:</label>
+				<input type="tel" id="Телефон" placeholder="8-111-111-11-11">
+				<label for="E-mail">E-mail: <span>*</span></label>
+				<input type="e-mail" id="E-mail" placeholder="email@mail.ru" required pattern="\S+@[a-z]+.[a-z]+">
+				<label for="Ваш вопрос">Ваш вопрос: <span>*</span></label>
+				<textarea name="Ваш вопрос" placeholder="Введите Ваш вопрос" required></textarea>
+				<button name="submit">Отправить вопрос</button>
+			</fieldset>
+		</form>
+</section>
+
+<footer class="container">
+	<nav>
+		<p>&copy; Aleksandr Cherkasov 2016</p>
+		<ul>
+				<li><a class="nav" href="#">Обо мне</a></li><!--
+				--><li><a class="nav" href="index.html">Проекты</a></li><!--
+			--><li><a class="nav" href="contacts.html">Контакты</a></li>
+		</ul>
+	</nav>
+</footer>
+
+</body>
+</html>

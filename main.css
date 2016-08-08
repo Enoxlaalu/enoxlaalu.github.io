@@ -1,0 +1,676 @@
+/* Сброс CSS */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+body {
+line-height: 1;
+}
+ol, ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+
+/*
+========================================
+Clearfix
+========================================
+*/
+
+.group:before,
+.group:after {
+content: "";
+display: table;
+}
+.group:after {
+clear: both;
+}
+.group {
+clear: both;
+*zoom: 1;
+}
+
+/*
+========================================
+Шрифты
+========================================
+*/
+
+@font-face {
+  font-family: 'Bangers';
+  src: url('fonts/bangers/bangers.eot');
+  src: url('fonts/bangers/bangers.eot?#iefix') format('embedded-opentype'),
+  url('fonts/bangers/bangers.woff') format('woff'),
+  url('fonts/bangers/bangers.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+/*
+========================================
+Сетка
+========================================
+*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.col-md-4 {
+  width: 33%;
+  display: inline-block;
+  vertical-align: top;
+  
+}
+
+/*
+========================================
+Пользовательские стили
+========================================
+*/
+
+body {
+  font: 300 16px/22px "Roboto", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/*
+========================================
+Навигация
+========================================
+*/
+
+nav {
+  text-align: right;
+  padding: 0 15px;
+}
+
+nav li {
+  display: inline-block;
+  vertical-align: top;
+  text-transform: uppercase;
+}
+
+nav li:last-child {
+  margin-right: 0;
+}
+
+.nav {
+  display: block;
+  padding: 30px 15px;
+  text-decoration: none;
+  color: #fff;
+  -webkit-transition: background 1s, color 1s;
+     -moz-transition: background 1s, color 1s;
+       -o-transition: background 1s, color 1s;
+          transition: background 1s, color 1s;
+}
+
+.nav:hover {
+  background: rgba(256,256,256, 1);
+  color: #000;
+}
+
+/*
+========================================
+Header
+========================================
+*/
+
+header {
+  background: url(images/spb2.jpg) no-repeat center center; 
+}
+
+.about_h {
+  background: url(images/spb3.jpg) no-repeat center center;
+}
+
+.contacts_h {
+  background: url(images/spb4.jpg) no-repeat center center;
+}
+
+header, .about_h, .contacts_h {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  color: #000;
+}
+
+h1 {
+  padding: 30px 15px;
+  font-size: 40px;
+  float: left;
+  font-family: 'Bangers', cursive;
+}
+
+h2 {
+  font-family: 'Lora', serif;
+  font-size: 40px;
+  padding: 100px;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.5em;
+  color: #fff;
+}
+
+header nav {
+  background: rgba(256,256,256, 0.3) no-repeat center center;
+}
+
+header nav li {
+  font-size: 20px;
+}
+
+/*
+========================================
+Section
+========================================
+*/
+
+section {
+  padding: 30px 100px;
+}
+
+img {
+  max-width: 100%;
+  min-height: 266px;
+  border: 1px solid #C3CAD1;
+  padding: 5px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+  -webkit-transition: box-shadow .5s;
+     -moz-transition: box-shadow .5s;
+       -o-transition: box-shadow .5s;
+          transition: box-shadow .5s;
+}
+
+img:hover {
+  box-shadow: 0 0 30px rgba(0,0,0,0.5);
+}
+
+section a {
+  display: inline-block;
+  padding: 3.6%;
+}
+
+/*
+========================================
+Footer
+========================================
+*/
+
+footer {
+  background: #C3CAD1;
+}
+
+footer p {
+  float: left;
+  padding-top: 30px;
+}
+
+
+/*
+========================================
+About
+========================================
+*/
+
+.about {
+  padding: 100px 200px;
+}
+
+.about .row_about {
+  border: 1px solid #ccc;
+  -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+       -o-border-radius: 10px;
+          border-radius: 10px;
+  padding: 0 10px 50px 10px;
+  text-align: center;
+}
+
+
+.about .photo-wrap {
+  display: inline-block;
+  width: 250px;
+  height: 120px;
+  margin: -60px 0 22px 0;
+  -webkit-transition: margin 1s ease-in-out;
+     -moz-transition: margin 1s ease-in-out;
+       -o-transition: margin 1s ease-in-out;
+          transition: margin 1s ease-in-out;
+}
+
+.about .photo-front {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+       -o-border-radius: 50%;
+          border-radius: 50%;
+  min-width: 48%;
+  height: 100%;
+  text-align: center;
+  -webkit-transform-style: preserve-3d;
+     -moz-transform-style: preserve-3d;
+       -o-transform-style: preserve-3d;
+      -ms-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: transform 1s ease-in-out;
+     -moz-transition: transform 1s ease-in-out;
+       -o-transition: transform 1s ease-in-out;
+          transition: transform 1s ease-in-out;
+}
+
+
+.about .photo-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+       -o-border-radius: 50%;
+          border-radius: 50%;
+  -webkit-backface-visibility: hidden;
+     -moz-backface-visibility: hidden;
+      -ms-backface-visibility: hidden;
+       -o-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+/*.about .photo-back, .about .photo-front:hover {
+  -webkit-transform-style: rotateY(180deg);
+     -moz-transform-style: rotateY(180deg);
+       -o-transform-style: rotateY(180deg);
+      -ms-transform-style: rotateY(180deg);
+                transform: rotateY(180deg);
+}*/
+
+@keyframes anim {
+  from {
+  -webkit-transform-style: rotateY(0deg);
+     -moz-transform-style: rotateY(0deg);
+       -o-transform-style: rotateY(0deg);
+      -ms-transform-style: rotateY(0deg);
+                transform: rotateY(0deg);
+  }
+  to {
+  -webkit-transform-style: rotateY(180deg);
+     -moz-transform-style: rotateY(180deg);
+       -o-transform-style: rotateY(180deg);
+      -ms-transform-style: rotateY(180deg);
+                transform: rotateY(180deg);
+  }
+}
+
+.about .photo-front {
+  animation: anim 2s infinite alternate ease-in-out;
+}
+
+.about .p1 {
+  background: #fff url(images/3.jpg) -100px 0px no-repeat;
+  background-size: auto 200px;
+}
+
+.about .p2 {
+  background: #fff url(images/1.jpg) -64px -58px no-repeat;
+  background-size: auto 400px;
+}
+
+.about .p3 {
+  background: #fff url(images/4.jpg) -47px 0px no-repeat;
+  background-size: auto 150px;
+}
+
+.about .p4 {
+  background: #fff url(images/5.jpg) 0px 0px no-repeat;
+  background-size: auto 250px;
+}
+
+.about p, .about ul {
+  margin-bottom: 20px;
+  color: #888;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.about ul {
+  text-align: left;
+  margin-left: 240px;
+  list-style-type: circle;
+}
+
+.about fieldset {
+  margin-top: 20px;
+  border: 5px solid #ccc;
+  -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+       -o-border-radius: 10px;
+          border-radius: 10px;
+  border-image: 5 repeating-linear-gradient(-45deg, #fe9e90 , #fe9e90 10px, transparent 10px, transparent 20px, #92cdff 20px, #92cdff 30px,transparent 30px, transparent 40px) repeat;
+  text-align: left;
+  padding: 20px;
+  color: #888;
+}
+
+.about legend {
+  font-size: 20px;
+  padding: 0 10px;
+}
+
+.about label {
+  display: block;
+  padding: 5px;
+}
+
+.about input, .about textarea {
+  display: block;
+  margin: 5px 10px;
+  padding: 5px;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+       -o-border-radius: 5px;
+          border-radius: 5px;
+}
+
+.about textarea {
+  font: 13.3333px Arial;
+  width: 400px;
+  height: 200px;
+}
+
+.about button {
+  margin: 10px;
+  padding: 10px 15px;
+  background: -webkit-linear-gradient(#49708f, #293f50);
+     background: -moz-linear-gradient(#49708f, #293f50);
+          background: linear-gradient(#49708f, #293f50);
+  color: #fff;
+  border-radius: 5px;
+}
+
+.about button:hover {
+  background: -webkit-linear-gradient(#5886aa, #3b5a72);
+     background: -moz-linear-gradient(#5886aa, #3b5a72);
+          background: linear-gradient(#5886aa, #3b5a72);
+}
+
+.about span {
+  color: red;
+}
+
+/*
+========================================
+Contacts
+========================================
+*/
+
+.contacts {
+padding: 100px 200px;
+text-align: center;
+}
+
+.contacts .row_contacts {
+  border: 1px solid #ccc;
+  -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+       -o-border-radius: 10px;
+          border-radius: 10px;
+  padding: 20px 10px 50px 10px;
+}
+
+.contacts iframe, .contacts video {
+padding: 50px 0;
+}
+
+.contacts iframe {
+width: 73%;
+height: 450px;
+}
+
+.contacts h3 {
+font: italic bold 30px/2em 'Lora', serif;
+}
+
+.contacts p {
+font-size: 20px;
+line-height: 2em;
+color: #888;
+}
+
+.social a {
+display: inline-block;
+margin: 10px 5px;
+width: 80px;
+height: 80px;
+background: url(icons/sprite.png) no-repeat; 
+}
+
+.social .vk:hover {
+background-position: 0 -80px;
+}
+
+.social .fb {
+background-position: -80px 0;
+}
+
+.social .fb:hover {
+background-position: -80px -80px;
+}
+
+
+/*
+========================================
+Media Queries
+========================================
+*/
+
+@media (max-width: 1024px) {
+  section {
+    padding: 30px 50px;
+  }
+  .about .photo-wrap {
+    width: 190px;
+    height: 90px;
+    margin: -45px 0 22px 0;
+  }
+  .about, .contacts{
+    padding: 75px 50px;
+  }
+
+}
+
+@media (max-width: 892px) {
+  .col-md-4 {
+    width: 49%;
+  }
+  section {
+    padding: 30px 30px;
+  }
+
+  .contacts iframe {
+    width: 80%;
+    height: 350px;
+  }
+}
+
+@media (max-width: 760px) {
+  h1 {
+    float: none;
+    text-align: center;
+  }
+  header ul {
+    text-align: center;
+  }
+
+  h2 {
+    padding: 70px;
+  }
+
+}
+
+@media (max-width: 538px) {
+  footer p {
+    float: none; 
+    text-align: center;
+  }
+  footer ul {
+    text-align: center;
+  }
+  .col-md-4 {
+    width: 100%;
+  }
+  h2 {
+    font-size: 35px;
+    padding: 50px;
+  }
+  .about, .contacts {
+    padding: 75px 35px;
+  }
+  .about p, .about ul, .contacts p {
+    font-size: 15px;
+  }
+  .about ul {
+    margin-left: 75px;
+  }
+  .about textarea {
+    width: 300px;
+    height: 150px;
+  }
+
+  .contacts h3 {
+    font-size: 25px;
+  }
+
+  .contacts a {
+    width: 50px;
+    height: 50px;
+    background: url(icons/sprite50px.png) no-repeat; 
+  }
+
+  .social .vk:hover {
+background-position: 0 -50px;
+  }
+
+  .social .fb {
+    background-position: -50px 0;
+  }
+
+  .social .fb:hover {
+    background-position: -50px -50px;
+  }
+
+  .contacts iframe {
+    width: 90%;
+    height: 250px;
+  }
+
+  .contacts video {
+    width: 90%;
+  }
+
+}
+
+@media (max-width: 385px) {
+  h1 {
+    line-height: normal;
+    font-size: 30px;
+    padding: 15px 15px;
+  }
+  nav li {
+    display: block;
+  }
+  h2 {
+    font-size: 25px;
+    padding: 20px;
+  }
+  .nav {
+    padding: 13px 15px;
+  }
+  nav {
+    padding-bottom: 30px;
+  }
+  footer .nav {
+    padding: 6px 15px;
+  }
+  footer p {
+    padding: 15px;
+  }
+  .about ul {
+    margin-left: 45px;
+  }
+  .about textarea {
+    width: 250px;
+    height: 100px;
+  }
+
+  .contacts {
+    padding: 40px 20px;
+  }
+
+  .contacts video {
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: 320px) {
+  .about ul {
+    margin-left: 30px;
+  }
+
+  .about textarea {
+    width: 200px;
+    height: 100px;
+  }
+  
+  .about legend {
+    font-size: 15px;
+  }
+
+  .contacts {
+    padding: 40px 10px;
+  }
+}
