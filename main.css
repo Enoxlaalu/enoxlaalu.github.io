@@ -71,11 +71,11 @@ clear: both;
 
 @font-face {
   font-family: 'Bangers';
-  src: url('fonts/bangers/bangers.eot');
-  src: url('fonts/bangers/bangers.eot?#iefix') format('embedded-opentype'),
-  url('fonts/bangers/bangers.woff') format('woff'),
-  url('fonts/bangers/bangers.woff2') format('woff2'),
-  url('fonts/bangers/bangers.ttf') format('truetype');
+  src: url('fonts/Bangers/bangers.eot');
+  src: url('fonts/Bangers/bangers.eot?#iefix') format('embedded-opentype'),
+  url('fonts/Bangers/bangers.woff') format('woff'),
+  url('fonts/Bangers/bangers.woff2') format('woff2'),
+  url('fonts/Bangers/Bangers.ttf') format('truetype');
   font-style: normal;
   font-weight: normal;
 }
