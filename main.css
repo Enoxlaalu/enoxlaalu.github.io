@@ -82,8 +82,8 @@ clear: both;
 
 @font-face {
     font-family: 'bangersregular';
-    src: url('bangers.woff2') format('woff2'),
-         url('bangers.woff') format('woff');
+    src: url('fonts/Bangers/bangers.woff2') format('woff2'),
+         url('fonts/Bangers/bangers.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
