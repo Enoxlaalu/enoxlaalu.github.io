@@ -11,7 +11,7 @@ fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
+menu, nav, output, ruby, main, summary,
 time, mark, audio, video {
 margin: 0;
 padding: 0;
@@ -22,7 +22,7 @@ vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+footer, header, hgroup, menu, nav, main {
 display: block;
 }
 body {
@@ -216,11 +216,11 @@ header nav li {
 
 /*
 ========================================
-Section
+main
 ========================================
 */
 
-section {
+.projects {
   padding: 30px 100px;
 }
 
@@ -239,7 +239,7 @@ img:hover {
   box-shadow: 0 0 30px rgba(0,0,0,0.5);
 }
 
-section a {
+.projects a {
   display: inline-block;
   padding: 3.6%;
 }
@@ -518,7 +518,7 @@ Media Queries
 */
 
 @media (max-width: 1024px) {
-  section {
+  main {
     padding: 30px 50px;
   }
   .about .photo-wrap {
@@ -536,7 +536,7 @@ Media Queries
   .col-md-4 {
     width: 49%;
   }
-  section {
+  main {
     padding: 30px 30px;
   }
 
