@@ -14,19 +14,51 @@
     <div class="wrapper">
 	<header class="container">
 		<div class="top-site clearfix">
-				<div class="logo"><img src="img/Logo.svg"></div>
+			<div class="logo"><img src="img/Logo.svg" alt="logo"></div>
 			<nav>
-				<ul>
-					<li><a href="#">Каталог</a></li><!--
+				<ul class="main-nav">
+					<li class="catalog-link"><a href="catalog.html">Каталог</a>
+						<ul class="drop-menu-catalog">
+							<li><a href="#" class="new">Новинки</a></li>
+							<li><a href="catalog.html">Сливочное</a></li>
+							<li><a href="#">Щербеты</a></li>
+							<li><a href="#">Фруктовый лед</a></li>
+							<li><a href="#">Мелорин</a></li>
+						</ul>
+					</li><!--
 					--><li><a href="#">Доставка и оплата</a></li><!--
 					--><li><a href="#">О компании</a></li>
 				</ul>
 			</nav>
 			<div class="user-block">
 				<ul>
-					<a class="user search" href="#">Поиск</a>
-					<a class="user enter" href="#">Вход</a>
-					<a class="user cart" href="#">Пусто</a>
+					<li class="user search dropdown-search">
+						<a class="" href="#">Поиск</a>
+						<ul class="drop-menu-search">
+							<form action="#">
+								<input type="search" id="search"><label for="search">Что ищем?</label>
+							</form>
+						</ul>
+					</li>
+					<li class="user enter dropdown-auth">
+						<a class="" href="#">Вход</a>
+						<ul class="drop-menu-auth">
+							<form action="#">
+								<div><input type="email" id="email"><label for="email">Электронная почта</label></div>
+								<div><input type="password" id="password"><label for="password">Пароль</label></div>
+								<div class="col-md-6">
+									<button class="btn btn-main" type="submit">Войти</button>
+								</div>
+								<div class="col-md-6">
+									<a href="#">Забыли пароль?</a>
+									<a href="#">Новая регистрация</a>
+								</div>
+							</form>
+						</ul>
+					</li>
+					<li class="user cart">
+					<a class="" href="#">Пусто</a>
+					</li>
 				</ul>
 			</div>
 			<div class="contacts clearfix">
@@ -35,26 +67,26 @@
 			</div>
 		</div>
 		<div class="slider">
-				<div class="slider-inner">
-                    <div class="slider-slides">
-                    	<h1>Крем-брюле и пломбир с малиновым джемом</h1>
-						<a href="#" class="btn btn-header">Давайте оба!</a>
-                    </div>
-                    <div class="slider-slides">
-                    	<h1>Шоколадный пломбир и лимонный сорбет</h1>
-						<a href="#" class="btn btn-header">Давайте оба!</a>
-                    </div>
-                    <div class="slider-slides">
-                    	<h1>Пломбир с помадкой и клубничный щербет</h1>
-						<a href="#" class="btn btn-header">Давайте оба!</a>
-                    </div>
+			<div class="slider-inner">
+                <div class="slider-slides">
+                	<h1>Крем-брюле и пломбир с малиновым джемом</h1>
+					<a href="#" class="btn btn-header">Давайте оба!</a>
                 </div>
-                <div class="slider-controls">
-                    <label class="slider-radio-1" for="btn-1"></label>
-                    <label class="slider-radio-2" for="btn-2"></label>
-                    <label class="slider-radio-3" for="btn-3"></label>
+                <div class="slider-slides">
+                	<h1>Шоколадный пломбир и лимонный сорбет</h1>
+					<a href="#" class="btn btn-header">Давайте оба!</a>
+                </div>
+                <div class="slider-slides">
+                	<h1>Пломбир с помадкой и клубничный щербет</h1>
+					<a href="#" class="btn btn-header">Давайте оба!</a>
                 </div>
             </div>
+            <div class="slider-controls">
+                <label class="slider-radio-1" for="btn-1"></label>
+                <label class="slider-radio-2" for="btn-2"></label>
+                <label class="slider-radio-3" for="btn-3"></label>
+            </div>
+        </div>
 		
 	</header>
 	<main class="container">
@@ -76,20 +108,32 @@
 		</section>
 		<section class="hit clearfix">
 			<div>
-				<div class="ice" data-price="310 &#8381;/кг"><img src="img/ice1.png"></div>
+				<div class="ice" data-price="310 &#8381;/кг"><img src="img/ice1.png" alt="ice1"></div>
 				<a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+				<div class="ice-wrap">
+					<button class="btn btn-ice">Быстрый просмотр</button>
+				</div>
 			</div>
 			<div>
-				<div class="ice" data-price="310 &#8381;/кг"><img src="img/ice2.png"></div>
+				<div class="ice" data-price="380 &#8381;/кг"><img src="img/ice2.png" alt="ice2"></div>
 				<a href="#">Сливочно-кофейное с кусочками шоколада</a>
+				<div class="ice-wrap">
+					<button class="btn btn-ice">Быстрый просмотр</button>
+				</div>
 			</div>
 			<div>
-				<div class="ice" data-price="310 &#8381;/кг"><img src="img/ice3.png"></div>
+				<div class="ice" data-price="455 &#8381;/кг"><img src="img/ice3.png" alt="ice3"></div>
 				<a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+				<div class="ice-wrap">
+					<button class="btn btn-ice">Быстрый просмотр</button>
+				</div>
 			</div>
 			<div>
-				<div class="ice" data-price="310 &#8381;/кг"><img src="img/ice4.png"></div>
+				<div class="ice" data-price="415 &#8381;/кг"><img src="img/ice4.png" alt="ice4"></div>
 				<a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+				<div class="ice-wrap">
+					<button class="btn btn-ice">Быстрый просмотр</button>
+				</div>
 			</div>
 		</section>
 		<section class="descr clearfix">
@@ -111,7 +155,7 @@
 			<div class="email right">
 				<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
 				<form action="#">
-					<input type="text" placeholder="Электронная почта">
+					<input type="email" name="email"><label for="email">Электронная почта</label>
 					<button class="btn btn-main" type="submit">Отправить</button>
 				</form>
 			</div>
@@ -131,10 +175,10 @@
 	</section>
 	<footer class="footer container clearfix">
 		<div class="social left">
-			<a href="#" class="tw"></a>
-			<a href="#" class="in"></a>
-			<a href="#" class="fb"></a>
-			<a href="#" class="vk"></a>
+			<a href="#" class="tw"><img src="img/tw.svg" alt=""></a>
+			<a href="#" class="in"><img src="img/in.svg" alt=""></a>
+			<a href="#" class="fb"><img src="img/fb.svg" alt=""></a>
+			<a href="#" class="vk"><img src="img/vk.svg" alt=""></a>
 		</div>
 		<nav class="sitemap left">
 			<div class="sitemap-col-1">
@@ -150,7 +194,23 @@
 				</ul>
 			</div>
 		</nav>
+		<div class="copyright right">
+			<a href="#" class="logo"><img src="img/htmlacademy.svg" alt="htmlacadeny"></a>
+			<p>Сделано в <a href="#">HTML Academy</a> &copy; 2016</p>
+		</div>
 	</footer>
 	</div>
+	<div class="modal-window">
+		<button type="button" class="modal-close"></button>
+		<p>Мы обязательно Вам ответим!</p>
+		<form action="#">
+			<input type="text" id="name" required><label for="name">Как Вас зовут?</label>
+			<input type="email" id="email-answer" required><label for="email-answer">Ваша почта для ответа</label>
+			<textarea id="write-smth" rows="6" class="write-smth" required></textarea><label for="write-smth">Напишите что-нибудь...</label>
+			<button type="submit" class="btn btn-main modal-btn">Отправить</button>
+		</form>
+	</div>
+	<div class="modal-overlay"></div>
+	<script src="js/script.js"></script>
 </body>
 </html>
